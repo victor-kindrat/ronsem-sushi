@@ -80,6 +80,7 @@
     font-weight: 600;
     color: #111111;
     font-size: calc(8px + .5vw);
+    z-index: 10;
 }
 
 .navigation__btn {
@@ -112,6 +113,7 @@
     font-family: Montserrat;
     color: #ffffff;
     border-radius: 5px;
+    font-weight: 500;
 }
 
 .cards__card.cards__card_normal {
@@ -122,14 +124,132 @@
 .cards__card.cards__card_wide {
     height: 146px;
     width: 334px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .cards__card.cards__card_height-less {
+    display: flex;
+    align-items: flex-end;
     height: 134px;
     width: 162px;
 }
 
+.cards__card:nth-child(1) {
+    background: url("./main/cards/cards__card_1.png") no-repeat center center;
+    background-size: cover;
+}
 
+.cards__card:nth-child(2) {
+    background: url("./main/cards/cards__card_2.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(3) {
+    background: url("./main/cards/cards__card_3.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(4) {
+    background: url("./main/cards/cards__card_4.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(5) {
+    background: url("./main/cards/cards__card_5.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(6) {
+    background: url("./main/cards/cards__card_6.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(7) {
+    background: url("./main/cards/cards__card_7.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(8) {
+    background: url("./main/cards/cards__card_8.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(9) {
+    background: url("./main/cards/cards__card_9.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(10) {
+    background: url("./main/cards/cards__card_10.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(11) {
+    background: url("./main/cards/cards__card_11.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(12) {
+    background: url("./main/cards/cards__card_12.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card:nth-child(13) {
+    background: url("./main/cards/cards__card_13.png") no-repeat center center;
+    background-size: cover;
+}
+
+.cards__card_soon::after {
+    content: 'Скоро';
+    background: #ea5757;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 100;
+    border-radius: 14px;
+    padding: 2px 5px;
+    position: relative;
+    margin: 0 0 0 15px;
+    text-transform: uppercase;
+}
+
+.description {
+    width: 100%;
+    min-height: 100vh;
+    color: #a8afb0;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+}
+
+.description__headline {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.description__text {
+    font-size: 18px;
+}
+
+.description__button {
+    display: flex;
+    border: none;
+    height: 134px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    top: -102px;
+    background: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 100%);
+    font-size: 24px;
+    color: #f39476;
+}
+
+.description__arrow-down {
+    position: relative;
+    top: -5px;
+    right: -5px;
+}
 
 
 
