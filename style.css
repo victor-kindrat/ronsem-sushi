@@ -107,7 +107,7 @@
 }
 
 .cards__card {
-    background: gray;
+    background-color: gray;
     padding: 10px;
     text-transform: capitalize;
     font-family: Montserrat;
