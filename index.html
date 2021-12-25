@@ -13,7 +13,7 @@
 <body>
     <div class="wrap">
         <header class="header">
-            <img src="./header/header__logo.svg" alt="..." class="header__logo">
+            <img src="./header/header__logo.svg" alt="..." class="header__logo" id="homeBtn">
             <span class="header__text-group">
                 <span class="header__contact">
                     <p class="header__text header__text_heading">Наш телефон</p>
@@ -28,7 +28,7 @@
             <img src="./header/header__search-btn.svg" alt="..." class="header__search-btn">
         </header>
         <nav class="navigation">
-            <div class="navigation__btn">
+            <div class="navigation__btn" id="menu">
                 <img src="./navigation/navigation__img_1.svg" alt="..." class="navigation__img">
                 <p class="navigation__text">Меню</p>
             </div>
@@ -36,12 +36,13 @@
                 <img src="./navigation/navigation__img_2.svg" alt="..." class="navigation__img">
                 <p class="navigation__text">Корзина</p>
             </div>
-            <div class="navigation__btn">
+            <div class="navigation__btn" id="reviewsBtn">
                 <img src="./navigation/navigation__img_3.svg" alt="..." class="navigation__img">
                 <p class="navigation__text">Отзывы</p>
             </div>
         </nav>
-        <main class="home_main">
+<!--        home-->
+        <main class="home_main" id="home">
             <div class="cards">
                 <div class="cards__card cards__card_normal">пицца</div>
                 <div class="cards__card cards__card_normal">сеты</div>
@@ -65,7 +66,48 @@
                 <button class="description__button" type="button" id="more">Подробнее <img src="./main/description__arrow-down.svg" alt="..." class="description__arrow-down" id="arrow1"></button>
             </div>
         </main>
-        <footer class="footer">
+<!--        reviews-->
+        <main class="reviews_main" id="reviews">
+            <h2 class="reviews__heading">Отзывы</h2>
+            <div class="reviews__block">
+                <div class="reviews__headPart">
+                    <h2 class="reviews__name">Розалия</h2>
+                    <p class="reviews__date">02.24.21</p>
+                </div>
+                <p class="reviews__review">
+                    Ваша доставка и ваши блюда лучшие в Харькове!) всегда очень вкусно, вовремя, всегда вежливые курьеры и девушки на телефоне
+                </p>
+            </div>
+            <div class="reviews__block">
+                <div class="reviews__headPart">
+                    <h2 class="reviews__name">Елена</h2>
+                    <p class="reviews__date">02.24.21</p>
+                </div>
+                <p class="reviews__review">
+                    Оооочень вкусно!!!!!!
+                </p>
+            </div>
+            <div class="reviews__block">
+                <div class="reviews__headPart">
+                    <h2 class="reviews__name">Сергей Гаврилюк</h2>
+                    <p class="reviews__date">02.24.21</p>
+                </div>
+                <p class="reviews__review">
+                    Заказываем у Вас больше 2 -ух лет, были разные ситуации, но сервис стал лучше, суши вкуснее. За доставку сегодня на время, огромное спасибо, точь-в-точь в минута в минуту. Успехов Вам и приятных бонусов нам )                </p>
+            </div>
+<!--            reviews add-->
+            <div class="reviews__block">
+                <div class="reviews__headPart">
+                    <input placeholder="Ваше имя" class="reviews__name" type="text" id="userName">
+                    <p class="reviews__date" id="dateVal">00.00.00</p>
+                    <button type="button" id="reviewClose">&check;</button>
+                </div>
+                <textarea placeholder="Ваш отзыв" required maxlength="400" class="reviews__review" id="rev"></textarea>
+            </div>
+            <button type="button" class="reviews__button" id="reviewAddBtn">+ Добавить отзыв</button>
+        </main>
+<!--        footer-->
+        <footer class="footer" id="footer">
             <p class="footer__text">Выберите удобный <br>
                 мессенджер для общения</p>
             <div class="footer__messengers-group">

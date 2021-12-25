@@ -96,6 +96,7 @@
 
 .home_main {
     padding: 20px 10px;
+    display: none; /* clear later */
 }
 
 .cards {
@@ -236,6 +237,7 @@
 .description__text {
     font-size: 18px;
     font-weight: 400;
+    transition: 0.3s;
 }
 
 .description__button {
@@ -255,6 +257,7 @@
 
 .description__text_hidden {
     display: none;
+    transition: 0.3s;
 }
 
 .description__arrow-down {
@@ -272,7 +275,7 @@
     flex-direction: column;
     row-gap: 31px;
     position: relative;
-    top: -90px;
+    top: -74px;
 }
 
 .footer__text {
@@ -300,6 +303,66 @@
     column-gap: 30px;
 }
 
+.reviews_main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+    font-family: "DIN Pro";
+}
+
+.reviews__block {
+    background: #ffffff;
+    padding: 10px;
+    color: #111111;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(220, 220, 220, 0.17);
+}
+
+.reviews__heading {
+    text-align: center;
+    font-size: 24px;
+}
+
+.reviews__headPart {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.reviews__date {
+    color: #A4ACAD;
+    font-weight: 500;
+}
+
+.reviews__review {
+    font-weight: 400;
+}
+
+.reviews__button {
+    border-radius: 5px;
+    border: none;
+    background: #111111;
+    color: #ffffff;
+    padding: 7px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.reviews_main input{
+    font-family: "DIN Pro";
+    padding: 5px;
+}
+
+.reviews_main textarea{
+    font-family: "DIN Pro";
+    padding: 5px;
+}
 @media screen and (min-width: 522px){
     .cards__card.cards__card_height-less, .cards__card.cards__card_wide {
         height: 157px;

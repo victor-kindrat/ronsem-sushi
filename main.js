@@ -12,5 +12,22 @@ more.onclick = function (){
         more.style.background = 'linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 100%)';
         moreTrigger = 0;
     }
+};
 
+reviewsBtn.onclick = function () {
+    home.style.display = 'none';
+    reviews.style.display = 'flex';
+    footer.style.top = '-50px';
+}
+
+menu.onclick = function () {
+    home.style.display = 'block';
+    reviews.style.display = 'none';
+    footer.style.top = '-75px';
+}
+
+homeBtn.onclick = function () {
+    home.style.display = 'block';
+    reviews.style.display = 'none';
+    footer.style.top = '-75px';
 }
