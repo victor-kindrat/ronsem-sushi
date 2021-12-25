@@ -27,6 +27,13 @@
     width: 47px;
 }
 
+.header__text-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 17px;
+}
+
 .header__contact {
     text-align: center;
 }
