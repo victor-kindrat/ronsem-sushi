@@ -305,6 +305,7 @@
 
 .reviews_main {
     min-height: 100vh;
+    max-width: 99%;
     display: none;
     flex-direction: column;
     padding: 15px;
@@ -319,6 +320,7 @@
     color: #111111;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(220, 220, 220, 0.17);
+    text-wrap: avoid;
 }
 
 .reviews__heading {
