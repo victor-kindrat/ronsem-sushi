@@ -40,9 +40,9 @@
 }
 
 .header__text {
-    font-family: Montserrat; /* change the font later*/
+    font-family: 'DIN Pro';
     color: #adb4b5;
-    font-size: calc(8px + .5vw);
+    font-size: calc(12px + .5vw);
 }
 
 .header__text_heading {
@@ -76,10 +76,10 @@
     text-align: center;
     border-top: 1px solid #cacece;
     column-gap: 42px;
-    font-family: Montserrat; /* change the font later*/
+    font-family: 'DIN Pro';
     font-weight: 600;
     color: #111111;
-    font-size: calc(8px + .5vw);
+    font-size: calc(12px + .5vw);
     z-index: 10;
 }
 
@@ -90,9 +90,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
+    color: #111111;
 }
 
-.main {
+.home_main {
     padding: 20px 10px;
 }
 
@@ -110,11 +112,12 @@
     background-color: gray;
     padding: 10px;
     text-transform: capitalize;
-    font-family: Montserrat;
+    font-family: 'DIN Pro';
     color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
+    font-size: 24px;
 }
 
 .cards__card.cards__card_normal {
@@ -218,7 +221,7 @@
     width: 100%;
     min-height: 50vh;
     color: #a8afb0;
-    font-family: Montserrat;
+    font-family: 'DIN Pro';
     display: flex;
     flex-direction: column;
     margin: 20px 0;
@@ -227,10 +230,12 @@
 .description__headline {
     font-size: 24px;
     margin: 10px 0;
+    font-weight: 700;
 }
 
 .description__text {
     font-size: 18px;
+    font-weight: 400;
 }
 
 .description__button {
@@ -261,7 +266,7 @@
 .footer {
     padding: 20px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'DIN Pro';
     color: #A4ACAD;
     display: flex;
     flex-direction: column;
