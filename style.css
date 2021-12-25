@@ -96,7 +96,6 @@
 
 .home_main {
     padding: 20px 10px;
-    display: none; /* clear later */
 }
 
 .cards {
@@ -305,7 +304,7 @@
 
 .reviews_main {
     min-height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 15px;
     row-gap: 10px;
