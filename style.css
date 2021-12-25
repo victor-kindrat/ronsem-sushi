@@ -113,6 +113,7 @@
     font-family: Montserrat;
     color: #ffffff;
     border-radius: 5px;
+    cursor: pointer;
     font-weight: 500;
 }
 
@@ -249,6 +250,49 @@
     position: relative;
     top: -5px;
     right: -5px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-family: Montserrat;
+    color: #A4ACAD;
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+    position: relative;
+    top: -90px;
+}
+
+.footer__text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer__soc-media-btn {
+    cursor: pointer;
+}
+
+
+.footer__text_underline {
+    text-decoration: underline;
+}
+
+.footer__contacts {
+    font-size: 16px;
+}
+
+.footer__messengers-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+@media screen and (min-width: 522px){
+    .cards__card.cards__card_height-less, .cards__card.cards__card_wide {
+        height: 157px;
+    }
 }
 
 
