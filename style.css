@@ -216,11 +216,12 @@
 
 .description {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     color: #a8afb0;
     font-family: Montserrat;
     display: flex;
     flex-direction: column;
+    margin: 20px 0;
 }
 
 .description__headline {
@@ -244,6 +245,11 @@
     background: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 100%);
     font-size: 24px;
     color: #f39476;
+    cursor: pointer;
+}
+
+.description__text_hidden {
+    display: none;
 }
 
 .description__arrow-down {
