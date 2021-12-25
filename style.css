@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 9px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #cacece;
+}
+
+.header__logo {
+    height: 43px;
+    width: 47px;
+}
+
+.header__contact {
+    text-align: center;
+}
+
+.header__text {
+    font-family: Montserrat; /* change the font later*/
+    color: #adb4b5;
+    font-size: calc(8px + .5vw);
+}
+
+.header__text_heading {
+    font-weight: 600;
+    color: #111111;
+}
+
+.header__text_numbers {
+    color: #fda55e;
+    font-weight: 400;
+}
+
+.header__timetable {
+    text-align: center;
+}
+
+.header__timetable-logo {
+    height: 15px;
+    width: 15px;
+}
+
+.navigation {
+    height: 72px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #cacece;
+    column-gap: 42px;
+    font-family: Montserrat; /* change the font later*/
+    font-weight: 600;
+    color: #111111;
+    font-size: calc(8px + .5vw);
+}
+
+.navigation__btn {
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
