@@ -305,7 +305,7 @@
 
 .reviews_main {
     min-height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 15px;
     row-gap: 10px;
