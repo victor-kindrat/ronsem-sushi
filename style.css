@@ -393,6 +393,27 @@
     box-shadow: 0 0 30px rgba(220, 24, 24, 0.26);
     transition: 0s;
 }
+
+@media screen and (max-width: 460px){
+    .header__timetable {
+        display: none;
+    }
+
+    .header__contact {
+        display: none;
+    }
+
+    .reviews__headPart {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+
+    .reviews__review_input {
+        width: 150px;
+    }
+}
+
 @media screen and (min-width: 522px){
     .cards__card.cards__card_height-less, .cards__card.cards__card_wide {
         height: 157px;
