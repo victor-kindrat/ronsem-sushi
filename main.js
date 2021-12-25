@@ -31,3 +31,30 @@ homeBtn.onclick = function () {
     reviews.style.display = 'none';
     footer.style.top = '-75px';
 }
+
+reviewAddBtn.onclick = function () {
+    if (userName.value === '' || rev.value === ''){
+        wrongAlert.style.transition = '3s';
+        wrongAlert.style.opacity = '1';
+        setTimeout(function () {
+            wrongAlert.style.opacity = '0';
+            wrongAlert.style.transition = '0s';
+        }, 5000);
+    } else {
+        let name = userName.value;
+        let review = rev.value;
+        reviewsList.innerHTML = reviewsList.innerHTML + '<div class="reviews__block">\n' +
+            '                    <div class="reviews__headPart">\n' +
+            '                        <h2 class="reviews__name">'+ name +'</h2>\n' +
+            '                        <p class="reviews__date">'+ datev.getMonth() + '.' + datev.getDay() + '.' + (datev.getFullYear() - 2000) +'</p>\n' +
+            '                    </div>\n' +
+            '                    <p class="reviews__review">\n' + review + '</p>\n' +
+            '</div>'
+        userName.value = '';
+        rev.value = ''
+    }
+}
+
+let datev = new Date();
+
+dateVal.innerText = datev.getMonth() + '.' + datev.getDay() + '.' + (datev.getFullYear() - 2000);
