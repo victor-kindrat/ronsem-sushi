@@ -17,18 +17,21 @@ more.onclick = function (){
 reviewsBtn.onclick = function () {
     home.style.display = 'none';
     reviews.style.display = 'flex';
+    setsPage.style.display = 'none';
     footer.style.top = '-50px';
 }
 
 menu.onclick = function () {
     home.style.display = 'block';
     reviews.style.display = 'none';
+    setsPage.style.display = 'none';
     footer.style.top = '-75px';
 }
 
 homeBtn.onclick = function () {
     home.style.display = 'block';
     reviews.style.display = 'none';
+    setsPage.style.display = 'none';
     footer.style.top = '-75px';
 }
 
@@ -53,6 +56,12 @@ reviewAddBtn.onclick = function () {
         userName.value = '';
         rev.value = ''
     }
+}
+
+setsOpen.onclick = function () {
+    home.style.display = 'none';
+    reviews.style.display = 'none';
+    setsPage.style.display = 'flex';
 }
 
 let datev = new Date();

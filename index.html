@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk">
+<html lang="uk" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -48,7 +48,7 @@
         <main class="home_main" id="home">
             <div class="cards">
                 <div class="cards__card cards__card_normal">піца</div>
-                <div class="cards__card cards__card_normal">сети</div>
+                <div class="cards__card cards__card_normal sets" id="setsOpen">сети</div>
                 <div class="cards__card cards__card_normal">WOK</div>
                 <div class="cards__card cards__card_normal">ролли</div>
                 <div class="cards__card cards__card_normal">суші</div>
@@ -64,6 +64,11 @@
             <div class="description">
                 <h1 class="description__headline">Замовте суші у вашому місті</h1>
                 <p class="description__text" id="description">Ресторан “Суші та Локшина” пропонуємо своїм клієнтам найсмачніші суші з доставкою додому, приготовані за класичними та адаптованими до європейської аудиторії рецептами, а також власними напрацюваннями наших кухарів. Ми цінуємо час наших клієнтів, тому ви можете замовити суші у Харкові з доставкою додому чи офісу.
+                    <br>У нашому меню понад 20 видів суші: <br>
+                    Класичні із сирим лососем, тунцем, окунем. <br>
+                    Екзотичні з тигровою креветкою, морським гребінцем. <br>
+                    Пікантні з копченим лососем, вуграм. <br>
+                    У меню також представлені гункани: з начинкою з червоної ікри та тобіко, а також фелікси, де японський майонез поєднується з рибою, морепродуктами, вуграм. Любителі гострих страв можуть купити суші із соусом спайсі. Популярні начинки - копчена курка, сніговий краб, креветки, гребінці, тунець, лосось та окунь.
                     <p class="description__text description__text_hidden" id="hidden">Лорем іпсум долор сіт амет, сит порро симул ін, ех вих агам дефінітіонем, дуо атяуі нонуми яуалисяуе еа. Ід хас харум приміс цомпрехенсам, сеа хабео мінімум цу. Хас иесяуе цоммодо інвенірує. Путант лаборес ратіонібус ет нец. Ті мєї тритані цонвеніре, еум симул пхаедрум торяуатос але, нам малорум еяуідем елаборарет но. Дуо еу персецуті елаборарет, ат імпердіє інструцтіор дуо.
 
                 Вигляд феррі магна еа меа. Вих синт цорпора хонестатис ан. Елітр цомплецтитур сіт ін. Її сеа доцтус відерер малуіссет, нам ат ассум меліоре, ід іус віріс цомпрехенсам. Її опортер евертитур вус.
@@ -134,6 +139,195 @@
             </div>
             <button type="button" class="reviews__button" id="reviewAddBtn">+ Додати відгук</button>
         </main>
+<!--         sets page-->
+        <main class="sets__main" id="setsPage">
+            <div class="sets__headline">
+                <img src="./sets/sets__logo.svg" alt="logo">
+                <h2 class="sets__headline-text">Сети</h2>
+            </div>
+            <button type="button" class="sets__btn">
+                <img src="./sets/sets__sort-btn_right.svg" alt="...">
+                Сортування
+                <img src="./sets/sets__sort-btn_left.svg" alt="...">
+            </button>
+            <div class="sets__goods">
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/1.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Салмон сет</h5>
+                            <p class="sets__card-text">1050 грам, 30 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1500 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/2.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Філадельфія LOVE сет</h5>
+                            <p class="sets__card-text">1000 грам, 40 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1479 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/3.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Сет "5 філадельфій"</h5>
+                            <p class="sets__card-text">1120 грам, 40 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1499 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/4.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Філадельфія і лосось сет</h5>
+                            <p class="sets__card-text">1260 грам, 36 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1599 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/5.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Салмон сет</h5>
+                            <p class="sets__card-text">1050 грам, 30 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1500 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/6.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Сет "6 філадельфій"</h5>
+                            <p class="sets__card-text">1320 грам, 46 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1599 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/7.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Топовий сет</h5>
+                            <p class="sets__card-text">1020 грам, 40 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1469 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/8.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Камікадзе сет</h5>
+                            <p class="sets__card-text">1200 грам, 52 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1599 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/9.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Сет "4 філадельфії"</h5>
+                            <p class="sets__card-text">1100 грам, 32 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1559 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/10.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Філадельфія LOVE сет</h5>
+                            <p class="sets__card-text">1000 грам, 40 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1479 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="sets__card">
+                    <div class="sets__card-img">
+                        <img src="./sets/sets__images/11.png" alt="sets__card-img">
+                    </div>
+                    <div class="sets__card-description">
+                        <span class="sets__card-column">
+                            <h5 class="sets__card-headline">Якудхза сет</h5>
+                            <p class="sets__card-text">1270 грам, 50 шматочків</p>
+                        </span>
+                        <span class="sets__card-row">
+                            <p class="sets__card-price">1499 Com</p>
+                            <button class="sets__card-btn" type="button">Хочу!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </main>
 <!--        footer-->
         <footer class="footer" id="footer">
             <p class="footer__text">Виберіть зручний <br>
@@ -149,7 +343,7 @@
                 <p class="footer__text">Адреса:Бакаєва 126</p>
             </div>
         </footer>
-    </div>
+        </div>
     <script src="./main.js"></script>
 </body>
 </html>
